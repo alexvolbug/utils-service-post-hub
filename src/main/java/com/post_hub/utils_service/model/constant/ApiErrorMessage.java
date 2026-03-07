@@ -14,7 +14,9 @@ public enum ApiErrorMessage {
     NOT_FOUND_ACTION_LOG_FOR_USER("LogId: '%s' for user: '%s' was not found"),
     EMPTY_USER_ID("User ID must not be null"),
     ACCESS_DENIED("Access denied: You can only view your own logs."),
-    ACCESS_THROUGH_NOT_API_SERVICE("Unauthorized Access, you should pass through the API service");
+    ACCESS_THROUGH_NOT_API_SERVICE("Unauthorized Access, you should pass through the API service"),
+    UNEXPECTED_ERROR("An unexpected error occurred. Please try again later."),
+    ;
 
     private final String value;
 
