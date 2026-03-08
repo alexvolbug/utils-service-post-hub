@@ -65,7 +65,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 return;
             }
         } else {
-            log.debug("No JWT token found in request headers");
+            log.debug("No JWT token found in request headers for URI: {}", request.getRequestURI());
         }
 
         filterChain.doFilter(request, response);
